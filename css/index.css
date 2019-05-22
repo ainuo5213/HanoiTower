@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.game {
+    width: 700px;
+    height: 400px;
+    background-color: #ccc;
+    margin: 1em auto;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+.game .column {
+    width: 20px;
+    background-color: rgb(95, 95, 95);
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.game .line {
+    width: 100%;
+    position: absolute;
+    height: 20px;
+    bottom: 0;
+    left: 0;
+    background: rgb(63, 63, 63);
+}
+
+.game .column div {
+    width: 200px;
+    height: 20px;
+    border-radius: 10px;
+    border: 1px solid #004949;
+    background-color: #008c8c;
+    cursor: pointer;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.btns {
+    width: 700px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btns .btn a {
+    margin: 0 20px;
+    width: 60px;
+    display: inline-block;
+    text-align: center;
+    background-color: #ccc;
+    color: #008c8c;
+    border-radius: 30px;
+}
+
+.btn a:hover {
+    background-color: #004949;
+    color: #fff;
+}

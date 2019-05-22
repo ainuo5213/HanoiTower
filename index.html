@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <div class="game">
+        <div class="column">
+        </div>
+        <div class="column"></div>
+        <div class="column"></div>
+        <div class="line"></div>
+    </div>
+    <div class="btns">
+        <div class="btn">
+            <a href="javascript:void(0)" data-from="column1" data-to="column3">左</a>
+            <a href="javascript:void(0)" data-from="column1" data-to="column2">右</a>
+        </div>
+        <div class="btn">
+            <a href="javascript:void(0)" data-from="column2" data-to="column1">左</a>
+            <a href="javascript:void(0)" data-from="column2" data-to="column3">右</a>
+        </div>
+        <div class="btn">
+            <a href="javascript:void(0)" data-from="column3" data-to="column2">左</a>
+            <a href="javascript:void(0)" data-from="column3" data-to="column1">右</a>
+        </div>
+    </div>
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/index.js"></script>
+<script>
+    new HanoiTower()
+</script>
+</html>
