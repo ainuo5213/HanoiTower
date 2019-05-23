@@ -10,6 +10,7 @@
             column3: []
         },
         minWidth: 50,
+        count:0,
         step: 30
     };
 
@@ -44,10 +45,11 @@
         },
         change: function (from, to) {
             config.columns[to].push(config.columns[from].pop());
+            config.count++;
             this.initColumn();
             setTimeout(() => {
                 if (config.columns.column1.length === 0 && config.columns.column2.length === 0) {
-                    alert('挑战成功');
+                    alert('挑战成功，共花费了'+config.count+'步');
                     config.columns.column3 = [];
                     new HanoiTower(config.columns.count);
                 }
